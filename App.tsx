@@ -14,7 +14,7 @@ const App: React.FC = () => {
             <div className="w-full max-w-lg mx-auto">
                 <div className="text-center mb-8">
                     <h1 className="text-3xl font-bold text-white sm:text-4xl">社会保险费 & 到手收入计算器</h1>
-                    <p className="mt-2 text-md text-gray-400">2025年3月・神奈川县支部</p>
+                    <p className="mt-2 text-md text-gray-400">2025年11月・神奈川县支部</p>
                 </div>
                 
                 <div className="bg-gray-800 border border-gray-700 rounded-lg shadow-2xl shadow-cyan-500/10 overflow-hidden">
