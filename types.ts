@@ -1,14 +1,3 @@
-
-export interface InsuranceDataRow {
-  grade: string;
-  standardRemuneration: number;
-  salaryMin: number;
-  salaryMax: number;
-  healthInsuranceNoCare: number; // Employee's share
-  healthInsuranceWithCare: number; // Employee's share
-  pensionInsurance: number; // Employee's share
-}
-
 export interface CalculationResult {
   salary: number;
   standardRemuneration: number;
@@ -25,4 +14,15 @@ export interface CalculatorState {
     result: CalculationResult | null;
     status: 'idle' | 'loading' | 'succeeded' | 'failed';
     error: string | null;
+}
+
+export interface InsuranceCost {
+  healthCostWithNoCare: number;
+  careCost: number;
+  pension: number;
+}
+
+export interface SocialInsuranceDTO {
+  employeeCost: InsuranceCost;
+  employerCost: InsuranceCost;
 }
