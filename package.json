@@ -4,9 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "next dev",
+    "dev": "NEXT_PUBLIC_ENV=dev next dev",
+    "dev:test": "NEXT_PUBLIC_ENV=test next dev",
+    "dev:prod": "NEXT_PUBLIC_ENV=prod next dev",
     "build": "next build",
+    "build:test": "NEXT_PUBLIC_ENV=test next build",
+    "build:prod": "NEXT_PUBLIC_ENV=prod next build",
     "start": "next start",
+    "start:test": "NEXT_PUBLIC_ENV=test next start",
+    "start:prod": "NEXT_PUBLIC_ENV=prod next start",
     "lint": "next lint"
   },
   "dependencies": {
