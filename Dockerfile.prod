@@ -1,5 +1,5 @@
 # Cloud Run用Next.js Dockerfile - 生产环境
-FROM node:18-alpine AS builder
+FROM node:24.11.1 AS builder
 
 # 作業ディレクトリを設定
 WORKDIR /app
@@ -22,7 +22,7 @@ COPY . .
 RUN npm run build
 
 # 本番段階 - Next.js standalone モードで実行
-FROM node:18-alpine AS production
+FROM node:24.11.1 AS production
 
 # 作業ディレクトリを設定
 WORKDIR /app
