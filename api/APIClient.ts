@@ -19,7 +19,7 @@ export class APIClient {
           monthlySalary,
           age,
         },
-      }
+      } 
     );
     return response.data;
   }
