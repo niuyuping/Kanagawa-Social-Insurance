@@ -1,7 +1,7 @@
 import apiClient from './axios';
 import { SocialInsuranceDTO } from '../types';
 
-export class APIClient {
+export class ApiClient {
   /**
    * 获取社会保险数据
    * @param monthlySalary 月薪
