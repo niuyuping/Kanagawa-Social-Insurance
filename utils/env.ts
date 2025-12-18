@@ -23,7 +23,7 @@ export const getApiBaseUrl = (): string => {
   const env = getRuntimeEnv();
   
   const apiUrls = {
-    prod: 'https://social-insurance-backend-chapter03-811681750681.asia-northeast1.run.app',
+    prod: 'https://social-insurance-backend-service-chapter04-811681750681.asia-northeast1.run.app',
     test: 'http://localhost',
     dev: 'http://localhost:9002',
   };
