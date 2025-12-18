@@ -6,7 +6,6 @@ import { setSalary, setBirthDate, calculateResult } from '../store/calculatorSli
 import { Input } from './shared/Input';
 import { Button } from './shared/Button';
 import { CALCULATION_DATE } from '../utils/constants';
-import { useState } from 'react';
 
 const CalculatorForm: React.FC = () => {
     const dispatch = useDispatch<AppDispatch>();

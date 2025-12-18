@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react';
 import Head from 'next/head';
-import { ApiClient } from '@/api/ApiClient';
-import { SocialInsuranceDTO } from '@/types';
 interface PageLayoutProps {
   title?: string;
   description?: string;
